@@ -26,8 +26,8 @@ def fahrenheit_to_celsius(degrees):
         Decimal('-17.78')
 
     """
-    celcius = (((decimal.Decimal(degrees) - 32) * 5) / 9)
-    return celcius
+    f_celcius = (((decimal.Decimal(degrees) - 32) * 5) / 9)
+    return f_celcius
 
 
 def celsius_to_kelvin(degrees):
@@ -47,8 +47,8 @@ def celsius_to_kelvin(degrees):
         Decimal('273.15')
 
     """
-    kelvin = ABSOLUTE_DIFFERENCE + degrees
-    return kelvin
+    c_kelvin = ABSOLUTE_DIFFERENCE + degrees
+    return c_kelvin
 
 
 def fahrenheit_to_kelvin(degrees):
@@ -68,9 +68,9 @@ def fahrenheit_to_kelvin(degrees):
         Decimal('255.37')
 
     """
-    celcius = fahrenheit_to_celsius(degrees)        # celcius function
+    f_celcius = fahrenheit_to_celsius(degrees)        # celcius function
 
     # Calling Celcius, to get KELVIN using new celcius value
 
-    kelvin = celsius_to_kelvin(celcius)
-    return kelvin
+    f_kelvin = celsius_to_kelvin(f_celcius)
+    return f_kelvin
