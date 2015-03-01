@@ -47,7 +47,7 @@ def celsius_to_kelvin(degrees):
         Decimal('273.15')
 
     """
-    c_kelvin = (ABSOLUTE_DIFFERENCE + degrees)
+    c_kelvin = ABSOLUTE_DIFFERENCE + degrees
     return c_kelvin
 
 
