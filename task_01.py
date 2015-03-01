@@ -6,7 +6,7 @@
 
 import decimal
 
-ABSOLUTE_DIFFERENCE = decimal.Decimal(273.15)       # deciaml value
+ABSOLUTE_DIFFERENCE = decimal.Decimal('273.15')       # deciaml value
 
 
 def fahrenheit_to_celsius(degrees):
@@ -47,7 +47,7 @@ def celsius_to_kelvin(degrees):
         Decimal('273.15')
 
     """
-    c_kelvin = ABSOLUTE_DIFFERENCE + degrees
+    c_kelvin = (ABSOLUTE_DIFFERENCE + degrees)
     return c_kelvin
 
 
